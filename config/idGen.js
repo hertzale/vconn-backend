@@ -12,6 +12,8 @@ async function generateID(entity) {
   if (entity === 'TRANSACTION') return `TX-${String(num).padStart(6, '0')}`;
   if (entity === 'PAYMENT')     return `PM-${String(num).padStart(5, '0')}`;
   if (entity === 'FEEDBACK')    return `FB-${String(num).padStart(4, '0')}`;
+  if (entity === 'TRIP')        return `TP-${String(num).padStart(4, '0')}`;
+  if (entity === 'INQUIRY')     return `IQ-${String(num).padStart(5, '0')}`;
 }
 
 module.exports = generateID;
